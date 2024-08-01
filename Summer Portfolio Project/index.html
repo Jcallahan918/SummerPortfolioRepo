@@ -1,11 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Jonathan's Professional Portfolio</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="https://kit.fontawesome.com/13f268f0fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+ <!----About Section----->
+ <div id="header">
+ <div class="container"> 
+ <nav>
+ <img src="images/THGP_Logo.png" alt="THGP Logo" class="logo">
+ <ul>
+ <li><a href="#header">Home</a></li>
+ <li><a href="#about">About</a></li>
+ <li><a href="#services">Services</a></li>
+ <li><a href="#portfolio">Portfolio</a></li>
+ <li><a href="#contact">Contact</a></li>
+ </ul>
+ </nav>
+ <div class="header-text">
+ <p>🎮🕹️👾GᗩᗰE ᗪEᐯEᒪOᑭEᖇ👾🕹️🎮</p>
+ <h1>Hello, I'm <span>𝒥𝑜𝓃𝒶𝓉𝒽𝒶𝓃 𝒞𝒶𝓁𝓁𝒶𝒽𝒶𝓃!</span><br>from Fairfied, CA!</h1>
+ </div>
+ </div>
+ </div>
+ <!-----About Section------>
+ <div id="about">
+ <div class="container">
+ <div class="row">
+ <div class="about-col-1"> 
+ <img src="images/PINA.jpeg">
+ </div>
+ <div class="about-col-2">
+ <h1 class="sub-title">𝓐𝓫𝓸𝓾𝓽 𝓜𝓮</h1>
+ <p>
+  Born and raised in the vibrant Bay Area, Jonathan Callahan has always been fueled by a deep passion for technology. From a young age, their enthusiasm for tech was evident, driven by a combination of innate curiosity and a strong sense of purpose. Inspired by a sense of divine guidance and a commitment to harnessing their skills for a greater good, Jonathan Callahan has cultivated expertise in both game development and tech creation. Through dedication and a relentless pursuit of their goals, they strive to innovate and excel in the tech industry, blending their technical prowess with a profound sense of purpose and inspiration.
+ </p>
+ <div class="tab-titles">
+ <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+ <p class="tab-links" onclick="openTab('exp')">Hobbys</p>
+ <p class="tab-links" onclick="openTab('edu')">Education</p>
+ </div>
+ <div class="tab-contents active-tab" id="skills">
+ <ul>
+ <li><span>Creation</span><br>(Master Builder)</li>
+ <li><span>LeaderShip Skills</span><br>(Good Communication)</li>
+ <li><span>Building Production</span><br>(Development)</li>
+ </ul>
+ </div>
+ <div class="tab-contents" id="exp">
+ <ul>
+ <li><span>HardWorking</span><br>(Dedacated)</li>
+ <li><span>VolleyBall Player</span><br>(North Hills Christian School)</li>
+ <li><span>Christian</span><br>(Son of God)</li>
+ </ul>
+ </div>
+ <div class="tab-contents" id="edu">
+ <ul>
+ <li><span>Freshman</span><br>(9th Grade)</li>
+ <li><span>North Hills Christian</span><br>(Class of 2028)</li>
+ <li><span>Gpa</span><br>(3.3)</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div id="services">
+ <div class="container">
+ <h1 class="sub-title">My Services</h1>
+ <div class="service-list">
+ <div>
+ <i class="fa-brands fa-youtube"></i>
+ <h2>Creation Skills</h2>
+ <p>Services 1 paragraph</p>
+ <a href="#">learn more</a>
+ </div>
+ <div>
+ <i class="fa-solid fa-music"></i>
+ <h2>Building Production</h2>
+ <p>Services 2 paragraph</p>
+ <a href="#">learn more</a>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <div id="portfolio">
+ <div class="container">
+ <h1 class="sub-title">My Work</h1>
+
+ <div class="work-list">
+
+ <div class="work">
+ <img src="images/chewy.jpeg">
+
+ <div class="layer">
+ <h3>Building</h3>
+ <p>I have been building with legos for a long time while since i was a child and i still do now even if it might sound like a childish hobby its not i asure you it helps with building your own creative mindset.
+ </p>
+ <a href="#">Link</a>
+ </div>
+ </div>
+
+ <div class="work">
+ <img src="images/work.jpg">
+
+ <div class="layer">
+ <h3>Church</h3>
+ <p>As a young man, I am profoundly thankful for the house of God. It offers me a sanctuary of peace and a source of spiritual strength. The community and teachings I find there nurture my faith and guide my journey. I deeply cherish the sense of belonging and support it provides, and I am grateful for the growth and direction it brings to my life.
+ </p>
+ <a href="#">Link</a>
+ </div>
+ </div>
+
+ <div class="work">
+ <img src="images/fam.jpeg">
+
+ <div class="layer">
+ <h3>Family</h3>
+ <p>I've always cherished my family. With both parents who have devoted over 20 years of love and support, and three older siblings—two brothers and one sister—I am the youngest. Our bond is strong, and we all share a deep love for one another.</p>
+ <a href="#">Link</a>
+ </div>
+ </div>
+ </div>
+ <a href="#" class="btn">See More</a>
+ </div>
+ </div>
+ <!-----portfolio end------>
+
+ <!------- contact start------->
+ <div id="contact">
+ <div class="container">
+ <div class="row">
+ <div class="contact-left"> 
+ <h1 class="sub-title">Contact Me At</h1>
+ <p>jonathancallahan.t49@gmail.com<i class="fa-solid fa-envelopes-bulk"></i></p>
+ <p>(707) 366 9101<i class="fa-solid fa-satellite"></i></p>
+ 
+ 
+ </div>
+
+ <div class="contact-right">
+ <form name="submit-to-google-sheet">
+ <input type="text" name="Name" placeholder="Your Name" required>
+ <input type= "email" name="Email" placeholder="Your Email" required>
+ <textarea name="Message" rows="3" placeholder="Your Message"></textarea>
+ <button type="submit" class="btn btn2">Submit</button>
+ </form>
+
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!----------contact end -->
+
+ <script>
+ /* Variable - A name and a type of a stored value */
+ /* A variable called tabLinks that holds the tags with class 'tab-links' */
+ var tabLinks = document.getElementsByClassName("tab-links");
+ /* A variable called tabContents that holds the tags with class 'tab-contents' */ 
+ var tabContents = document.getElementsByClassName("tab-contents");
+ function openTab(tabName) {
+ for (tabLink of tabLinks) {
+ tabLink.classList.remove("active-link");
+ }
+ for (tabContent of tabContents) {
+ tabContent.classList.remove("active-tab");
+ }
+ event.currentTarget.classList.add("active-link");
+ document.getElementById(tabName).classList.add("active-tab");
+ }
+ </script>
+ <script>
+ const scriptURL = 'https://script.google.com/macros/s/AKfycbyQVuFZmXUa2qT1GMj6iNOk8yKxZeq9vip1UAkdvLGvEYpOwNDW37dqqkc7DTm34Th4_A/exec'
+ const form = document.forms['submit-to-google-sheet']
+ 
+ form.addEventListener('submit', e => {
+ e.preventDefault()
+ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+ .then(response => console.log('Success!', response))
+ .catch(error => console.error('Error!', error.message))
+ })
+ </script>
 </body>
 </html>
